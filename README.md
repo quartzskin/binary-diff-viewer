@@ -47,8 +47,7 @@ overwritten unless you pass `--force`, and an input file can't be used as an out
 - Strings are ASCII and UTF-16LE runs of 4+ characters. Only the first 10,000 per file are compared, and
   long ones are cut at 200 characters.
 
-## Known gaps
-
+## Limits
 - Byte comparison is positional. Insert one byte near the start and everything after it shows as changed;
   there is no alignment step.
 - The PE comparison only looks at the entry point, timestamp and section headers/contents. No imports,
